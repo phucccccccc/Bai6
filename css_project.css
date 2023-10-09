@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    z-index: 1;
+    background-color: antiquewhite;
+} 
+
+.container .menu .imager  img{
+    float: left;
+    margin-top: 20px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.container .menu ul li {
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 120px;
+    border: 1px solid white;
+    padding: 10px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.container .menu .item i{
+      float: right;
+      margin-right: 40px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid white;
+      margin-left: 5px;
+      border-radius: 8px;
+      background-color: white;
+      font-size: 30px;
+}
+.conten {
+    position: relative;
+    display: inline-block;
+}
+.conten img{
+    width: 100%;
+    height: auto;
+}
+.conten .text{
+    position: absolute; /* Định vị tuyệt đối nội dung trên hình ảnh */
+            top: 50%; /* Đặt vị trí từ trên xuống 50% của container */
+            left: 50%; /* Đặt vị trí từ trái qua 50% của container */
+            transform: translate(-50%, -50%); /* Dịch chuyển nội dung để căn giữa */
+            background-color: rgba(0, 0, 0, 0.5); /* Màu nền cho nội dung, ví dụ: màu đen với độ trong suốt 50% */
+            color: white; /* Màu chữ cho nội dung */
+            padding: 20px; /* Khoảng cách giữa nội dung và biên ngoài */
+            text-align: center; /* Căn giữa văn bản */
+            z-index: 1; /* Đảm bảo nội dung hiển thị trên hình ảnh */
+    
+}
+.conten .text a{
+    border: 1 solid rgb(220, 28, 28);
+    padding: 20px;
+    float: left;
+    background-color: red;
+    margin-left: 10px;
+    text-align: center;
+
+
+}
